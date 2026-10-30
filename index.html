@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Anrey Larrience Briso is an IT and multimedia student creating thoughtful digital experiences, visual identities, and useful web products."
+      content="Anrey Larrience Briso is an IT and multimedia student focused on user-centered interfaces, visual communication, and practical digital products."
     />
     <meta name="theme-color" content="#111313" />
     <title>Anrey Larrience Briso — Designer & Developer</title>
@@ -30,7 +30,7 @@
               <path class="cat-face" d="M15 21h.1m9 0h.1m-6 4 2 1 2-1m-8 2-3 1m16-1 3 1" />
             </svg>
           </span>
-          <span class="wordmark-name">Anrey Larrience Briso</span>
+          <span class="wordmark-name">Anrey-Db</span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           <span class="sr-only">Toggle navigation</span>
@@ -65,8 +65,8 @@
               digital feel <span class="serif-word">human<span class="title-period">.</span></span>
             </h1>
             <p class="hero-description">
-              I’m Anrey — a curious designer and developer building useful things with a little more
-              feeling and a lot more intention.
+              I’m Anrey, an IT and multimedia student focused on designing clear, purposeful digital
+              experiences across visual design, interface development, and interactive media.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#work">
@@ -87,6 +87,9 @@
             <div class="art-orbit orbit-two"></div>
             <div class="art-orbit orbit-three"></div>
             <div class="art-orbit orbit-four"></div>
+            <div class="art-orbit orbit-five"></div>
+            <div class="art-orbit orbit-six"></div>
+            <div class="art-orbit orbit-seven"></div>
             <div class="ring-rocks" aria-hidden="true">
               <span style="--rock-angle: 8deg; --rock-radius: 214px; --rock-size: 7px"></span>
               <span style="--rock-angle: 42deg; --rock-radius: 222px; --rock-size: 4px"></span>
@@ -97,35 +100,71 @@
               <span style="--rock-angle: 278deg; --rock-radius: 215px; --rock-size: 6px"></span>
               <span style="--rock-angle: 326deg; --rock-radius: 223px; --rock-size: 5px"></span>
             </div>
-            <div class="portrait-card">
-              <img
-                class="portrait-image"
-                src="images/Image.jpg"
-                alt="Illustrated portrait of Anrey wearing a black hoodie"
-                fetchpriority="high"
-              />
-              <img
-                class="portrait-image portrait-gif"
-                src="gif/No%20Worries%20Yes%20Sticker%20by%20Qyuwi.gif"
-                alt="Animated No Worries Yes sticker"
-              />
-  
+
+            <div class="ring-tech-icons" aria-hidden="true">
+              <span style="--icon-angle: 15deg; --icon-radius: 215px;" title="Vue.js">
+                <svg viewBox="0 0 128 128"><path fill="#42b883" d="M78.8 10.4L64 35.9 49.2 10.4H0l64 110.8L128 10.4z"/><path fill="#35495e" d="M78.8 10.4L64 35.9 49.2 10.4H25.6L64 76.8l38.4-66.4z"/></svg>
+              </span>
+              <span style="--icon-angle: 60deg; --icon-radius: 220px;" title="MongoDB">
+                <svg viewBox="0 0 128 128"><path fill="#13aa52" d="M62.2 1.8c-1.3.8-2.1 2.3-2.1 3.9v116.6c0 1.9 1.1 3.6 2.8 4.3 1.7.7 3.7.3 4.9-1L121 72.8c2.4-2.4 3-6.1 1.5-9.2C106.8 30.8 84.7 10 62.2 1.8z"/><path fill="#116149" d="M65.8 1.8c1.3.8 2.1 2.3 2.1 3.9v116.6c0 1.9-1.1 3.6-2.8 4.3-1.7.7-3.7.3-4.9-1L7 72.8c-2.4-2.4-3-6.1-1.5-9.2C21.2 30.8 43.3 10 65.8 1.8z"/></svg>
+              </span>
+              <span style="--icon-angle: 105deg; --icon-radius: 210px;" title="React">
+                <svg viewBox="0 0 100 100"><ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="#61dafb" stroke-width="6"/><ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="#61dafb" stroke-width="6" transform="rotate(60 50 50)"/><ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="#61dafb" stroke-width="6" transform="rotate(120 50 50)"/><circle cx="50" cy="50" r="8" fill="#61dafb"/></svg>
+              </span>
+              <span style="--icon-angle: 150deg; --icon-radius: 225px;" title="Node.js">
+                <svg viewBox="0 0 128 128"><path fill="#5fa04e" d="M64 8.5L14.2 37.3v57.4L64 123.5l49.8-28.8V37.3L64 8.5zm0 18.2l34.2 19.7V80L64 99.7 29.8 80V46.4L64 26.7z"/></svg>
+              </span>
+              <span style="--icon-angle: 195deg; --icon-radius: 215px;" title="JavaScript">
+                <svg viewBox="0 0 128 128"><rect width="128" height="128" fill="#f7df1e" rx="16"/><path fill="#000" d="M67.3 104c3.3 5.3 7.9 8.8 15.6 8.8 6.5 0 10.7-3.2 10.7-7.7 0-5.3-4.2-7.3-11.3-10.4l-3.9-1.7c-11.2-4.8-16.6-10.8-16.6-21.6 0-12 9.5-21 24.5-21 10.6 0 18.2 3.7 23.4 12.8l-10 6.4c-2.8-4.9-6.3-7.1-12.7-7.1-5.4 0-8.8 3-8.8 6.8 0 4.6 3.1 6.6 9.8 9.5l3.9 1.7c13.2 5.6 18.5 11.2 18.5 22.5 0 13.9-10.8 22.2-27.2 22.2-13.8 0-22.7-5.5-28.2-16.3l12.4-7.9z"/></svg>
+              </span>
+              <span style="--icon-angle: 240deg; --icon-radius: 220px;" title="Python">
+                <svg viewBox="0 0 128 128"><path fill="#3776ab" d="M62.6 12c-21.7 0-20.3 9.4-20.3 9.4l.1 9.8h20.8v3h-29S19 32.7 19 54.8s13.4 21.3 13.4 21.3h8v-11.3s-.4-13.4 13.4-13.4h22.9s12.8.2 12.8-12.4V24.8s1.8-12.8-26.9-12.8zm-11.4 6.7a3.8 3.8 0 1 1 0 7.7 3.8 3.8 0 0 1 0-7.7z"/><path fill="#ffd343" d="M65.4 116c21.7 0 20.3-9.4 20.3-9.4l-.1-9.8H64.8v-3h29s15.3 1.5 15.3-20.6-13.4-21.3-13.4-21.3h-8v11.3s.4 13.4-13.4 13.4H51.4s-12.8-.2-12.8 12.4v14.6s-1.8 12.8 26.8 12.8zm11.4-6.7a3.8 3.8 0 1 1 0-7.7 3.8 3.8 0 0 1 0 7.7z"/></svg>
+              </span>
+              <span style="--icon-angle: 285deg; --icon-radius: 210px;" title="Docker">
+                <svg viewBox="0 0 128 128"><path fill="#2496ed" d="M124.5 59.8c-3.8-2.8-11.6-4.2-17.7-1.4-1.2-5.4-5.3-9.7-10.7-11.1l-2.8-.7v9.1c0 8.6-6.8 15.7-15.4 16.3H3.8c-1.8 4.2-1.9 9.1-.1 13.5 6.4 15.4 21.9 25.5 39.1 25.5 28.5 0 52.8-18.7 61-45.2 8.7-.3 16.8-2.6 20.7-6z"/></svg>
+              </span>
+              <span style="--icon-angle: 330deg; --icon-radius: 225px;" title="Tailwind">
+                <svg viewBox="0 0 128 128"><path fill="#06b6d4" d="M32 32c12.8 0 21.3 6.4 25.6 19.2-6.4 3.2-12.8 1.6-19.2-4.8C33.6 41.6 28.8 38.4 16 38.4c-12.8 0-21.3 6.4-25.6 19.2 6.4-3.2 12.8-1.6 19.2 4.8 4.8 4.8 9.6 8 22.4 8zM64 64c12.8 0 21.3 6.4 25.6 19.2-6.4 3.2-12.8 1.6-19.2-4.8-4.8-4.8-9.6-8-22.4-8-12.8 0-21.3 6.4-25.6 19.2 6.4-3.2 12.8-1.6 19.2 4.8 4.8 4.8 9.6 8 22.4 8z"/></svg>
+              </span>
+              <span style="--icon-angle: 38deg; --icon-radius: 282px;" title="HTML5">
+                <svg viewBox="0 0 128 128"><path fill="#e44d26" d="M19 8l8 101 37 11 37-11 8-101H19z"/><path fill="#f16529" d="M64 112V17H28l7 82 29 9z"/><path fill="#fff" d="M94 32H43l2 13h48l-4 47-25 8v-14l14-4 1-17H63V51h35l-2-19zM64 82H47l1 11 16 5V82z"/></svg>
+              </span>
+              <span style="--icon-angle: 82deg; --icon-radius: 278px;" title="CSS3">
+                <svg viewBox="0 0 128 128"><path fill="#1572b6" d="M19 8l8 101 37 11 37-11 8-101H19z"/><path fill="#33a9dc" d="M64 112V17H28l7 82 29 9z"/><path fill="#fff" d="M94 32H43l2 13h47l-3 34-25 8v14l37-11 6-58H94zM64 58H47l1 13h16v-13zm0 29H48l1 13 15 4V87z"/></svg>
+              </span>
+              <span style="--icon-angle: 128deg; --icon-radius: 280px;" title="Git">
+                <svg viewBox="0 0 128 128"><path fill="#f05032" d="M124 59L69 4c-3-3-7-3-10 0L47 16l15 15c4-1 8 0 11 3 3 3 4 7 3 11l15 15c4-1 8 0 11 3 5 5 5 13 0 18s-13 5-18 0c-3-3-4-7-3-11L67 56v42c1 1 2 2 2 4 0 5-4 9-9 9s-9-4-9-9c0-3 2-6 5-8V51c-3-2-5-5-5-8 0-5 4-9 9-9 2 0 4 1 6 2l12-12-10-10-55 55c-3 3-3 7 0 10l55 55c3 3 7 3 10 0l51-51c3-3 3-7 0-10z"/></svg>
+              </span>
+              <span style="--icon-angle: 172deg; --icon-radius: 286px;" title="Figma">
+                <svg viewBox="0 0 128 128"><path fill="#f24e1e" d="M48 8h16v37H48a18.5 18.5 0 1 1 0-37z"/><path fill="#ff7262" d="M64 8h16a18.5 18.5 0 1 1 0 37H64V8z"/><path fill="#a259ff" d="M48 45h16v38H48a19 19 0 1 1 0-38z"/><path fill="#1abcfe" d="M64 45h16a19 19 0 1 1 0 38H64V45z"/><circle cx="56" cy="101" r="18.5" fill="#0acf83"/></svg>
+              </span>
+              <span style="--icon-angle: 218deg; --icon-radius: 280px;" title="PHP">
+                <svg viewBox="0 0 128 128"><ellipse cx="64" cy="64" rx="57" ry="33" fill="#777bb3"/><path fill="#fff" d="M25 78l8-28h14c11 0 15 6 12 16-3 9-9 12-20 12h-5l-3 10H24l1-10zm12-8h4c5 0 8-2 9-6 1-4-1-6-6-6h-4l-3 12zm28-20h9l-3 11h8c10 0 14 5 11 15l-3 10h-9l3-11c1-4 0-6-4-6h-8l-5 17h-9l10-36zm29 0h14c11 0 15 6 12 16-3 9-9 12-20 12h-5l-3 10h-9l11-38zm4 8l-3 12h4c5 0 8-2 9-6 1-4-1-6-6-6h-4z"/></svg>
+              </span>
+              <span style="--icon-angle: 262deg; --icon-radius: 286px;" title="C++">
+                <svg viewBox="0 0 128 128"><path fill="#00599c" d="M64 10a54 54 0 1 0 47 81l-18-10a34 34 0 1 1 0-34l18-10A54 54 0 0 0 64 10z"/><path fill="#fff" d="M42 55h-8v8h-8v8h8v8h8v-8h8v-8h-8v-8zm43 0h-8v8h-8v8h8v8h8v-8h8v-8h-8v-8z"/></svg>
+              </span>
+              <span style="--icon-angle: 306deg; --icon-radius: 282px;" title="GitHub">
+                <svg viewBox="0 0 128 128"><path fill="#c9d1d9" d="M64 8a56 56 0 0 0-18 109c3 1 4-1 4-3v-11c-18 4-22-9-22-9-3-8-7-10-7-10-6-4 1-4 1-4 7 1 11 7 11 7 6 11 16 8 20 6 1-5 3-8 5-10-14-2-29-7-29-32 0-7 2-13 7-18-1-2-3-9 1-18 0 0 6-2 19 7a52 52 0 0 1 35 0c13-9 19-7 19-7 4 9 2 16 1 18 5 5 7 11 7 18 0 25-15 30-29 32 3 3 5 8 5 15v15c0 2 1 4 4 3A56 56 0 0 0 64 8z"/></svg>
+              </span>
             </div>
-            <div class="art-label art-label-top"><span>Dev</span> ALWAYS IN PROGRESS</div>
-            <div class="art-label art-label-bottom"><span>DESIGN</span><span>×</span><span>TECH</span></div>
-            <img
-              class="art-sticker"
-              src="gif\Full Moon Space Sticker by Shiny bear.gif"
-              alt="Animated Please Sir Hello sticker"
-            />
-            <span class="art-coordinate">14°35' N — 120°59' E</span>
+
+            <div class="brain-saturn" aria-hidden="true">
+              <div class="brain-saturn-ring brain-saturn-ring-one"></div>
+              <div class="brain-saturn-ring brain-saturn-ring-two"></div>
+              <svg viewBox="0 0 120 120" role="img" aria-label="Brain icon">
+                <path class="brain-outline" d="M59 18c-9-9-24-3-24 9-10-2-18 8-14 18-10 5-9 20 1 25-4 12 7 22 18 18 6 11 21 10 26 0V29c0-5-3-9-7-11zM61 18c9-9 24-3 24 9 10-2 18 8 14 18 10 5 9 20-1 25 4 12-7 22-18 18-6 11-21 10-26 0V29c0-5 3-9 7-11z"/>
+                <path class="brain-detail" d="M42 30c8 2 8 10 3 14m-18 7c8-2 13 3 12 10m-8 18c7-3 13 0 15 7m15-57v67m14-66c-8 2-8 10-3 14m18 7c-8-2-13 3-12 10m8 18c-7-3-13 0-15 7"/>
+              </svg>
+            </div>
+            
           </div>
           <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
         </section>
 
         <section class="intro-strip" aria-label="Introduction">
           <div class="section-wrap intro-strip-inner">
-            <p>Good work lives somewhere between <span>logic</span> and <span>imagination.</span></p>
+            <p>Strong digital work is built at the intersection of <span>strategic thinking</span> and <span>creative execution.</span></p>
             <div class="strip-index">A LITTLE ABOUT HOW I THINK <span></span></div>
           </div>
         </section>
@@ -139,15 +178,26 @@
             <div class="about-lead reveal">
               <h2>Part creative.<br />Part <span class="serif-word">problem-solver.</span></h2>
               <p>
-                I’m an IT and multimedia student who likes working across the whole experience —
-                from the first rough sketch to the last line of code.
+                I am an IT and multimedia student who works across the full product experience,
+                from early concept development and visual direction to implementation and refinement.
               </p>
             </div>
+            <figure class="about-portrait reveal">
+              <div class="about-portrait-frame">
+                <span class="frame-corner frame-corner-tl" aria-hidden="true"></span>
+                <div class="portrait-glitch">
+                  <img src="images/Anrey.png.png" alt="Anrey Larrience Briso" loading="lazy" decoding="async" />
+                  <img src="images/Anrey.png.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                </div>
+                <span class="frame-corner frame-corner-br" aria-hidden="true"></span>
+              </div>
+              <figcaption><span>ANREY LARRIENCE BRISO</span><span>01 / 01</span></figcaption>
+            </figure>
             <div class="about-details reveal">
               <p>
-                I care about the little things: clear words, considered interactions, and interfaces
-                that feel easy to be in. I’m currently learning, experimenting, and looking for
-                thoughtful teams to learn alongside.
+                My approach combines thoughtful communication, purposeful interaction design, and
+                accessible interfaces. I am continuously developing my skills through focused projects,
+                experimentation, and collaboration with teams that value quality and continuous learning.
               </p>
               <div class="about-facts">
                 <div><span class="fact-label">STUDYING</span><span>Information Technology<br />&amp; Multimedia Arts</span></div>
@@ -164,10 +214,16 @@
             <div class="skills-intro reveal">
               <p class="eyebrow"><span class="section-number">02</span> Things I work with</p>
               <h2>Tools are only<br />the <span class="serif-word">beginning.</span></h2>
-              <p>A growing toolkit for turning good ideas into real, usable things.</p>
+              <p>A developing technical toolkit for translating concepts into reliable, usable digital experiences.</p>
             </div>
             <div class="skills-list reveal">
               <div class="skills-chart-wrap">
+                <div class="skills-filters" role="group" aria-label="Filter skill categories">
+                  <button class="skills-filter is-active" type="button" data-skill-filter="all" aria-pressed="true">All skills</button>
+                  <button class="skills-filter" type="button" data-skill-filter="design" aria-pressed="false">Design</button>
+                  <button class="skills-filter" type="button" data-skill-filter="development" aria-pressed="false">Development</button>
+                  <button class="skills-filter" type="button" data-skill-filter="workflow" aria-pressed="false">Workflow</button>
+                </div>
                 <svg class="skills-chart" viewBox="0 0 520 278" role="img" aria-labelledby="skills-chart-title skills-chart-desc">
                   <title id="skills-chart-title">Skills proficiency line graph</title>
                   <desc id="skills-chart-desc">UI and UX Design 85 percent, HTML and CSS 90 percent, JavaScript 72 percent, Figma 88 percent, Adobe Creative Suite 76 percent, and Prototyping and Storytelling 82 percent.</desc>
@@ -185,6 +241,13 @@
                     <text x="35" y="170">25</text>
                     <text x="35" y="216">0</text>
                   </g>
+                  <defs>
+                    <linearGradient id="skills-area-gradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#00B4D8" stop-opacity=".28" />
+                      <stop offset="100%" stop-color="#00B4D8" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path class="skills-area" d="M 60 212 L 60 56 L 148 46 L 236 80 L 324 50 L 412 72 L 500 61 L 500 212 Z" />
                   <path class="skills-line" d="M 60 56 L 148 46 L 236 80 L 324 50 L 412 72 L 500 61" />
                   <g class="skill-points">
                     <g><circle cx="60" cy="56" r="5" /><text x="60" y="43">85%</text></g>
@@ -204,7 +267,7 @@
                   </g>
                 </svg>
               </div>
-              <p class="skills-note">Always learning. These are checkpoints, not limits.</p>
+              <p class="skills-note">These benchmarks reflect my current capabilities and my commitment to continuous improvement.</p>
             </div>
           </div>
         </section>
@@ -216,7 +279,7 @@
           </div>
           <div class="work-heading reveal">
             <h2>Small ideas.<br /><span class="serif-word">Real intention.</span></h2>
-            <p>School briefs, personal experiments, and ideas I couldn’t leave alone.</p>
+            <p>A selection of academic and independent projects demonstrating my experience in application development, web systems, and interface design.</p>
           </div>
           <div class="project-grid">
             <article class="project-card project-card-large reveal">
@@ -248,7 +311,7 @@
                 <div><p class="project-kicker">APP DEVELOPMENT</p><h3>Planner App</h3></div>
                 <span class="project-year">APP</span>
               </div>
-              <p class="project-summary">A planner application built with Dart, C++, CMake, Swift, HTML, C, and other technologies.</p>
+              <p class="project-summary">A structured planning application designed to help users organize tasks, monitor progress, and manage daily priorities.</p>
               <a class="repository-link" href="https://github.com/Anrey-Db/Planner-App.git" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
             </article>
             <article class="project-card reveal">
@@ -276,7 +339,7 @@
                 <div><p class="project-kicker">WEB APPLICATION</p><h3>Tailoring Management System</h3></div>
                 <span class="project-year">WEB</span>
               </div>
-              <p class="project-summary">A tailoring management system built with the Laravel framework and Blade.</p>
+              <p class="project-summary">A web-based management system that supports tailoring operations, including orders, client records, measurements, and fittings.</p>
               <a class="repository-link" href="https://github.com/Anrey-Db/TailoringManagementSystem.git" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
             </article>
             <article class="project-card reveal">
@@ -304,7 +367,7 @@
                 <div><p class="project-kicker">WEB DEVELOPMENT</p><h3>Appointment Booking System</h3></div>
                 <span class="project-year">JS</span>
               </div>
-              <p class="project-summary">An appointment booking system made with pure JavaScript.</p>
+              <p class="project-summary">A responsive appointment scheduling interface that enables users to review availability and select a suitable time.</p>
               <a class="repository-link" href="https://github.com/Anrey-Db/Appointment-Booking-System.git" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
             </article>
           </div>
@@ -313,7 +376,7 @@
               <p class="eyebrow"><span class="section-number"></span> Animated collection</p>
               <h3 id="gif-gallery-title">A little <span class="serif-word">motion.</span></h3>
             </div>
-            <p>A few animated stickers to bring some extra personality to the page.</p>
+            <p>A curated collection of animated visual studies demonstrating motion, timing, and expressive digital illustration.</p>
           </div>
           <div class="gif-gallery" aria-labelledby="gif-gallery-title">
             <figure class="gif-card reveal">
@@ -349,7 +412,7 @@
               <figcaption>Happy Jump</figcaption>
             </figure>
           </div>
-          <p class="work-footnote"><span></span> A selection of projects built with different tools and approaches.</p>
+          <p class="work-footnote"><span></span> Projects developed with different technologies, workflows, and design considerations.</p>
         </section>
 
         <section class="journey section-wrap section-pad" id="journey">
@@ -358,20 +421,20 @@
             <span class="section-aside">STILL EARLY, ALWAYS MOVING</span>
           </div>
           <div class="journey-grid">
-            <div class="journey-title reveal"><h2>Learning<br />with <span class="serif-word">purpose.</span></h2><p>My education and seminars have helped me build a strong foundation in IT and explore what’s next in technology.</p></div>
+            <div class="journey-title reveal"><h2>Learning<br />with <span class="serif-word">purpose.</span></h2><p>My academic training and professional seminars have established a foundation in information technology while guiding my continued development across design and software.</p></div>
             <div class="timeline">
               <article class="timeline-entry reveal">
-                <span class="timeline-year">2022 — 2026</span>
+                <span class="timeline-year">2024 — 2027</span>
                 <div><h3>Bachelor of Science in Information Technology</h3><p class="timeline-place">Infotech Development System Colleges</p><p>Tertiary education</p></div>
                 <span class="timeline-marker"></span>
               </article>
               <article class="timeline-entry reveal">
-                <span class="timeline-year">2021 — 2023</span>
+                <span class="timeline-year">2020 — 2023</span>
                 <div><h3>Senior High School · GAS</h3><p class="timeline-place">Marcial O. Ranola Memorial School</p></div>
                 <span class="timeline-marker"></span>
               </article>
               <article class="timeline-entry reveal">
-                <span class="timeline-year">2017 — 2021</span>
+                <span class="timeline-year">2017 — 2020</span>
                 <div><h3>High School</h3><p class="timeline-place">Marcial O. Ranola Memorial School</p></div>
                 <span class="timeline-marker"></span>
               </article>
@@ -407,7 +470,7 @@
             <div class="contact-copy">
               <p class="eyebrow"><span class="section-number">05</span> Your turn</p>
               <h2>Have a good<br />one in <span class="serif-word">mind?</span></h2>
-              <p>I’m always up for a thoughtful conversation, a new collaboration, or a recommendation for a really good book.</p>
+          <p>I welcome conversations about internships, freelance opportunities, collaborative projects, and thoughtful digital products.</p>
               <a class="contact-email" href="mailto:brisoanrey@gmail.com">brisoanrey@gmail.com <span>↗</span></a>
               <div class="social-links">
                 <a href="https://www.linkedin.com/in/anrey-briso-6595b5327/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
@@ -433,16 +496,16 @@
               <label for="contact-message">What’s on your mind?</label>
               <textarea id="contact-message" name="message" rows="3" placeholder="A project, a question, a hello..." required maxlength="2000"></textarea>
               <button class="button button-primary form-submit" type="submit">Write me a note <span>↗</span></button>
-              <p class="form-note" id="form-note" aria-live="polite">This opens your email app with your note ready to send.</p>
+          <p class="form-note" id="form-note" aria-live="polite">Your message will open in your default email application for review before sending.</p>
             </form>
           </div>
         </section>
       </main>
 
       <footer class="site-footer section-wrap">
-        <a class="footer-brand" href="#home">Anrey Larrience Briso<span>.</span></a>
-        <p>Made with curiosity, coffee, and a little CSS.</p>
-        <span class="copyright">© <span id="current-year">2025</span> ANREY LARRIENCE BRISO</span>
+        <a class="footer-brand" href="#home">Anrey-Db<span>.</span></a>
+        <p>Designed and developed with intention, curiosity, and a commitment to continuous improvement.</p>
+        <span class="copyright">© <span id="current-year">2025</span> Anrey-Db</span>
       </footer>
     </div>
 

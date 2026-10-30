@@ -4,36 +4,87 @@ const projects = [
     title: "Planner App",
     category: "APP DEVELOPMENT",
     description:
-      "A planner application built using Dart, C++, CMake, Swift, HTML, C, and other technologies.",
-    role: "Application development.",
-    tools: "Dart, C++, CMake, Swift, HTML, C, and others",
+      "A structured planning application designed to help users organize tasks, monitor progress, and manage daily priorities.",
+    role: "Application design and development.",
+    tools: "Dart, C++, CMake, Swift, HTML, C",
     year: "App",
-    note: "Built with a mix of programming languages and development tools.",
+    note: "Designed as a practical study in application structure, task management, and cross-platform development.",
     repository: "https://github.com/Anrey-Db/Planner-App"
   },
   {
     title: "Tailoring Management System",
     category: "WEB APPLICATION",
     description:
-      "A management system for tailoring, built with the Laravel framework and Blade templates.",
-    role: "Web application development.",
+      "A web-based management system that supports tailoring operations, including orders, client records, measurements, and fittings.",
+    role: "Web application design and development.",
     tools: "Laravel, Blade",
     year: "Web",
-    note: "Built with Laravel and Blade.",
+    note: "Focused on organizing operational data into a clear and efficient workflow.",
     repository: "https://github.com/Anrey-Db/TailoringManagementSystem"
   },
   {
     title: "Appointment Booking System",
     category: "WEB DEVELOPMENT",
     description:
-      "An appointment booking system implemented using pure JavaScript.",
-    role: "Web development.",
+      "A responsive appointment scheduling interface that enables users to review availability and select a suitable time.",
+    role: "Front-end design and development.",
     tools: "Pure JavaScript",
     year: "JS",
-    note: "Implemented without a JavaScript framework.",
+    note: "Built with vanilla JavaScript to demonstrate interaction design, state handling, and responsive behavior.",
     repository: "https://github.com/Anrey-Db/Appointment-Booking-System"
   }
 ];
+
+const skillSets = {
+  all: {
+    labels: ["UI/UX", "HTML", "JS", "FIGMA", "ADOBE", "PROTO"],
+    values: [85, 90, 72, 88, 76, 82]
+  },
+  design: {
+    labels: ["UI/UX", "FIGMA", "ADOBE", "PROTO", "TYPO", "MOTION"],
+    values: [85, 88, 76, 82, 78, 71]
+  },
+  development: {
+    labels: ["HTML", "CSS", "JS", "PHP", "C++", "GIT"],
+    values: [90, 86, 72, 68, 64, 80]
+  },
+  workflow: {
+    labels: ["RESEARCH", "SYSTEMS", "TESTING", "DOCS", "VERSION", "DELIVERY"],
+    values: [82, 79, 74, 88, 80, 77]
+  }
+};
+
+function updateSkillsChart(filter) {
+  const set = skillSets[filter] || skillSets.all;
+  const xPositions = [60, 148, 236, 324, 412, 500];
+  const yForValue = (value) => 212 - value * 1.84;
+  const linePath = set.values.map((value, index) => `${index ? "L" : "M"} ${xPositions[index]} ${yForValue(value)}`).join(" ");
+  const areaPath = `M 60 212 L ${set.values.map((value, index) => `${xPositions[index]} ${yForValue(value)}`).join(" L ")} L 500 212 Z`;
+  const chart = document.querySelector(".skills-chart");
+  if (!chart) return;
+
+  chart.querySelector(".skills-line").setAttribute("d", linePath);
+  chart.querySelector(".skills-area").setAttribute("d", areaPath);
+  chart.querySelectorAll(".skill-points > g").forEach((point, index) => {
+    point.querySelector("circle").setAttribute("cy", yForValue(set.values[index]));
+    point.querySelector("text").setAttribute("y", yForValue(set.values[index]) - 13);
+    point.querySelector("text").textContent = `${set.values[index]}%`;
+  });
+  chart.querySelectorAll(".chart-labels text").forEach((label, index) => {
+    label.textContent = set.labels[index];
+  });
+}
+
+document.querySelectorAll(".skills-filter").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".skills-filter").forEach((filterButton) => {
+      const isActive = filterButton === button;
+      filterButton.classList.toggle("is-active", isActive);
+      filterButton.setAttribute("aria-pressed", String(isActive));
+    });
+    updateSkillsChart(button.dataset.skillFilter);
+  });
+});
 
 // ==========================================
 // SCROLL REVEAL ANIMATION

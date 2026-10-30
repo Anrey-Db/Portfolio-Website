@@ -85,6 +85,18 @@
             <div class="art-grid"></div>
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
+            <div class="art-orbit orbit-three"></div>
+            <div class="art-orbit orbit-four"></div>
+            <div class="ring-rocks" aria-hidden="true">
+              <span style="--rock-angle: 8deg; --rock-radius: 214px; --rock-size: 7px"></span>
+              <span style="--rock-angle: 42deg; --rock-radius: 222px; --rock-size: 4px"></span>
+              <span style="--rock-angle: 86deg; --rock-radius: 212px; --rock-size: 6px"></span>
+              <span style="--rock-angle: 132deg; --rock-radius: 220px; --rock-size: 5px"></span>
+              <span style="--rock-angle: 178deg; --rock-radius: 216px; --rock-size: 8px"></span>
+              <span style="--rock-angle: 224deg; --rock-radius: 221px; --rock-size: 4px"></span>
+              <span style="--rock-angle: 278deg; --rock-radius: 215px; --rock-size: 6px"></span>
+              <span style="--rock-angle: 326deg; --rock-radius: 223px; --rock-size: 5px"></span>
+            </div>
             <div class="portrait-card">
               <img
                 class="portrait-image"
@@ -101,7 +113,11 @@
             </div>
             <div class="art-label art-label-top"><span>FIG. 01</span> ALWAYS IN PROGRESS</div>
             <div class="art-label art-label-bottom"><span>DESIGN</span><span>×</span><span>TECH</span></div>
-            <div class="art-sticker">CURIOUS<br />BY DEFAULT <span>✳</span></div>
+            <img
+              class="art-sticker"
+              src="gif\Full Moon Space Sticker by Shiny bear.gif"
+              alt="Animated Please Sir Hello sticker"
+            />
             <span class="art-coordinate">14°35' N — 120°59' E</span>
           </div>
           <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
@@ -110,7 +126,7 @@
         <section class="intro-strip" aria-label="Introduction">
           <div class="section-wrap intro-strip-inner">
             <p>Good work lives somewhere between <span>logic</span> and <span>imagination.</span></p>
-            <div class="strip-index">A LITTLE ABOUT HOW I THINK <span>✳</span></div>
+            <div class="strip-index">A LITTLE ABOUT HOW I THINK <span></span></div>
           </div>
         </section>
 
@@ -150,30 +166,43 @@
               <h2>Tools are only<br />the <span class="serif-word">beginning.</span></h2>
               <p>A growing toolkit for turning good ideas into real, usable things.</p>
             </div>
-            <div class="skills-list">
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>UI / UX DESIGN</span><span>85%</span></div>
-                <div class="skill-track"><span style="--level: 85%"></span></div>
-              </div>
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>HTML &amp; CSS</span><span>90%</span></div>
-                <div class="skill-track"><span style="--level: 90%"></span></div>
-              </div>
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>JAVASCRIPT</span><span>72%</span></div>
-                <div class="skill-track"><span style="--level: 72%"></span></div>
-              </div>
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>FIGMA</span><span>88%</span></div>
-                <div class="skill-track"><span style="--level: 88%"></span></div>
-              </div>
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>ADOBE CREATIVE SUITE</span><span>76%</span></div>
-                <div class="skill-track"><span style="--level: 76%"></span></div>
-              </div>
-              <div class="skill-item reveal">
-                <div class="skill-top"><span>PROTOTYPING &amp; STORYTELLING</span><span>82%</span></div>
-                <div class="skill-track"><span style="--level: 82%"></span></div>
+            <div class="skills-list reveal">
+              <div class="skills-chart-wrap">
+                <svg class="skills-chart" viewBox="0 0 520 278" role="img" aria-labelledby="skills-chart-title skills-chart-desc">
+                  <title id="skills-chart-title">Skills proficiency line graph</title>
+                  <desc id="skills-chart-desc">UI and UX Design 85 percent, HTML and CSS 90 percent, JavaScript 72 percent, Figma 88 percent, Adobe Creative Suite 76 percent, and Prototyping and Storytelling 82 percent.</desc>
+                  <g class="chart-grid" aria-hidden="true">
+                    <line x1="44" y1="28" x2="496" y2="28" />
+                    <line x1="44" y1="74" x2="496" y2="74" />
+                    <line x1="44" y1="120" x2="496" y2="120" />
+                    <line x1="44" y1="166" x2="496" y2="166" />
+                    <line x1="44" y1="212" x2="496" y2="212" />
+                  </g>
+                  <g class="chart-scale" aria-hidden="true">
+                    <text x="35" y="32">100</text>
+                    <text x="35" y="78">75</text>
+                    <text x="35" y="124">50</text>
+                    <text x="35" y="170">25</text>
+                    <text x="35" y="216">0</text>
+                  </g>
+                  <path class="skills-line" d="M 60 56 L 148 46 L 236 80 L 324 50 L 412 72 L 500 61" />
+                  <g class="skill-points">
+                    <g><circle cx="60" cy="56" r="5" /><text x="60" y="43">85%</text></g>
+                    <g><circle cx="148" cy="46" r="5" /><text x="148" y="33">90%</text></g>
+                    <g><circle cx="236" cy="80" r="5" /><text x="236" y="67">72%</text></g>
+                    <g><circle cx="324" cy="50" r="5" /><text x="324" y="37">88%</text></g>
+                    <g><circle cx="412" cy="72" r="5" /><text x="412" y="59">76%</text></g>
+                    <g><circle cx="500" cy="61" r="5" /><text x="500" y="48">82%</text></g>
+                  </g>
+                  <g class="chart-labels" aria-hidden="true">
+                    <text x="60" y="238">UI/UX</text>
+                    <text x="148" y="238">HTML</text>
+                    <text x="236" y="238">JS</text>
+                    <text x="324" y="238">FIGMA</text>
+                    <text x="412" y="238">ADOBE</text>
+                    <text x="500" y="238">PROTO</text>
+                  </g>
+                </svg>
               </div>
               <p class="skills-note">Always learning. These are checkpoints, not limits.</p>
             </div>
@@ -196,7 +225,7 @@
                   <div class="app-window-bar"><span></span><span></span><span></span><i>my planner / dashboard</i></div>
                   <div class="planner-layout">
                     <aside class="planner-sidebar">
-                      <strong><span>✳</span> daybook</strong>
+                      <strong><span></span> daybook</strong>
                       <span class="planner-nav-active">▦ &nbsp; Overview</span>
                       <span>□ &nbsp; My tasks</span>
                       <span>▣ &nbsp; Calendar</span>
@@ -204,7 +233,7 @@
                       <div class="planner-sidebar-bottom"><span class="planner-avatar">A</span> Anrey</div>
                     </aside>
                     <div class="planner-main">
-                      <div class="planner-greeting"><div><small>MONDAY, OCTOBER 27</small><strong>Good morning, Anrey <span>✳</span></strong></div><b>＋ &nbsp; New task</b></div>
+                      <div class="planner-greeting"><div><small>MONDAY, OCTOBER 27</small><strong>Good morning, Anrey <span></span></strong></div><b>＋ &nbsp; New task</b></div>
                       <div class="planner-progress"><span class="progress-icon">✓</span><div><b>You’re making progress</b><small>3 of 5 tasks completed today</small><i><span></span></i></div><strong>60%</strong></div>
                       <div class="planner-task-heading"><b>Today’s focus</b><span>VIEW ALL ↗</span></div>
                       <div class="planner-task"><span class="task-check checked">✓</span><span><b>Review project notes</b><small>PERSONAL &nbsp;·&nbsp; 9:30 AM</small></span><i>DONE</i></div>
@@ -256,7 +285,7 @@
                   <div class="booking-window-bar"><span></span><span></span><span></span><i>appointment / schedule</i></div>
                   <div class="booking-content">
                     <div class="booking-header"><div><small>BOOK YOUR VISIT</small><strong>Find a time that works.</strong></div><span>01 <i>/</i> 03</span></div>
-                    <div class="booking-provider"><span class="provider-icon">✳</span><span><b>Studio appointment</b><small>Choose a date and available time</small></span><span class="provider-arrow">↗</span></div>
+                    <div class="booking-provider"><span class="provider-icon"></span><span><b>Studio appointment</b><small>Choose a date and available time</small></span><span class="provider-arrow">↗</span></div>
                     <div class="booking-date-heading"><b>October 2025</b><span>‹ &nbsp; ›</span></div>
                     <div class="booking-calendar">
                       <span>MO</span><span>TU</span><span>WE</span><span>TH</span><span>FR</span><span>SA</span><span>SU</span>
@@ -281,7 +310,7 @@
           </div>
           <div class="gif-gallery-heading reveal">
             <div>
-              <p class="eyebrow"><span class="section-number">✳</span> Animated collection</p>
+              <p class="eyebrow"><span class="section-number"></span> Animated collection</p>
               <h3 id="gif-gallery-title">A little <span class="serif-word">motion.</span></h3>
             </div>
             <p>A few animated stickers to bring some extra personality to the page.</p>
@@ -320,7 +349,7 @@
               <figcaption>Happy Jump</figcaption>
             </figure>
           </div>
-          <p class="work-footnote"><span>✳</span> A selection of projects built with different tools and approaches.</p>
+          <p class="work-footnote"><span></span> A selection of projects built with different tools and approaches.</p>
         </section>
 
         <section class="journey section-wrap section-pad" id="journey">
@@ -384,6 +413,15 @@
                 <a href="https://www.linkedin.com/in/anrey-briso-6595b5327/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
                 <a href="https://www.facebook.com/SFtheAnswer/" target="_blank" rel="noreferrer">Facebook <span>↗</span></a>
                 <a href="https://github.com/Anrey-Db/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              </div>
+              <div class="contact-chibis" aria-label="A few cute animated chibis">
+                <img src="chibis/Acid%20Fatty%20Sticker.gif" alt="Animated chibis cuddling" loading="lazy" />
+                <img src="chibis/gif%20(1).gif" alt="Animated chibis waving" loading="lazy" />
+                <img src="chibis/gif%20(2).gif" alt="Animated chibi character sitting" loading="lazy" />
+                <img src="chibis/Angry%20Fire%20Sticker.gif" alt="Animated angry chibi surrounded by fire" loading="lazy" />
+                <img src="chibis/Angry%20Punch%20Sticker.gif" alt="Animated chibis playfully punching" loading="lazy" />
+                <img src="chibis/Dance%20Hiphop%20Sticker.gif" alt="Animated chibi dancing" loading="lazy" />
+                <img src="chibis/gif.gif" alt="Animated chibis playfully fighting" loading="lazy" />
               </div>
             </div>
             <form class="contact-form" id="contact-form">
